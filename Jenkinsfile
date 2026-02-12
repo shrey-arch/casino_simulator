@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'agent1' }
 
     stages {
         stage('Checkout') {
@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'echo Building project...'
+                bat 'hostname'
             }
         }
 
