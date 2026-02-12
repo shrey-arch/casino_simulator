@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Royale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎰</text></svg>">
+</head>
+
+<body>
+    <div id="app">
+        <header id="main-header">
+            <h1>Casino Royale</h1>
+            <div id="user-info">
+                <span id="currency-display">Balance: $0</span>
+            </div>
+        </header>
+
+        <main id="game-container">
+            <!-- Game or Lobby content will be injected here -->
+            <div id="lobby-view">
+                <h2>Welcome to the Casino</h2>
+                <div id="game-list">
+                    <!-- Game cards will be generated here -->
+                </div>
+            </div>
+        </main>
+
+        <footer id="main-footer">
+            <p>&copy; 2024 Offline Casino. Pure JS.</p>
+        </footer>
+    </div>
+
+    <!-- Modals and Overlays -->
+    <div id="modal-overlay" class="hidden">
+        <div id="modal-content"></div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
